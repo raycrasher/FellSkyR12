@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectView.Editor</name>
+    </assembly>
+    <members>
+        <member name="F:Duality.Editor.Plugins.ProjectView.ProjectFolderView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Duality.Editor.Plugins.ProjectView.ProjectFolderView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Duality.Editor.Plugins.ProjectView.ProjectFolderView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.IconProjectView">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.MenuItemName_ProjectView">
+            <summary>
+              Looks up a localized string similar to Project View.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.NewFolderName">
+            <summary>
+              Looks up a localized string similar to New Folder.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Copy">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Cut">
+            <summary>
+              Looks up a localized string similar to Cut.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Delete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Folder">
+            <summary>
+              Looks up a localized string similar to Folder.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Import">
+            <summary>
+              Looks up a localized string similar to Import....
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_New">
+            <summary>
+              Looks up a localized string similar to New.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Paste">
+            <summary>
+              Looks up a localized string similar to Paste.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_Rename">
+            <summary>
+              Looks up a localized string similar to Rename.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ContextItemName_ShowInExplorer">
+            <summary>
+              Looks up a localized string similar to Show in Explorer.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_Help_Doubleclick">
+            <summary>
+              Looks up a localized string similar to Doubleclick: {0}.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_ImportFileDialog_Title">
+            <summary>
+              Looks up a localized string similar to Select the file(s) you wish to import.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_CantMove_Caption">
+            <summary>
+              Looks up a localized string similar to Can&apos;t move file.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_CantMove_Text">
+            <summary>
+              Looks up a localized string similar to Can&apos;t move file to &apos;{0}&apos; because it would overwrite an existing file..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_CantRename_Caption">
+            <summary>
+              Looks up a localized string similar to Can&apos;t rename file.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_CantRename_Text">
+            <summary>
+              Looks up a localized string similar to Can&apos;t rename file to &apos;{0}&apos; because it would overwrite an existing file..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_ConfirmDeleteSelectedFiles_Caption">
+            <summary>
+              Looks up a localized string similar to Delete selected files?.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectFolderView_MsgBox_ConfirmDeleteSelectedFiles_Text">
+            <summary>
+              Looks up a localized string similar to Do you really want to delete the selected files?.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewRes.ProjectNameLabel">
+            <summary>
+              Looks up a localized string similar to Project.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ProjectView.Properties.ProjectViewResCache">
+            <summary>
+            Since directly accessing code generated from .resx files will result in a deserialization on
+            each Resource access, this class allows cached Resource access.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ProjectView.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.cross">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.cut">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.disk">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.folder">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.page_copy">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.page_paste">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.page_white_put">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ProjectView.Properties.Resources.WorkingFolderIcon16">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

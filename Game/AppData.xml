@@ -1,0 +1,20 @@
+﻿<root dataType="Struct" type="Duality.DualityAppData" id="129723834">
+  <appName dataType="String">Duality Application</appName>
+  <customData />
+  <forcedRenderResizeMode dataType="Enum" type="Duality.TargetResize" name="Fit" value="2" />
+  <forcedRenderSize dataType="Struct" type="Duality.Point2" />
+  <multisampleBackBuffer dataType="Bool">true</multisampleBackBuffer>
+  <physicsFixedTime dataType="Bool">false</physicsFixedTime>
+  <physicsVelThreshold dataType="Float">0.8333333</physicsVelThreshold>
+  <renderSetup dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.RenderSetup]]">
+    <contentPath dataType="String">Data\gfx\OrderedRenderSetup.RenderSetup.res</contentPath>
+  </renderSetup>
+  <skipBackends />
+  <soundDopplerFactor dataType="Float">1</soundDopplerFactor>
+  <speedOfSound dataType="Float">360</speedOfSound>
+  <startScene dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Scene]]">
+    <contentPath dataType="String">Data\Scene.Scene.res</contentPath>
+  </startScene>
+  <version dataType="UInt">895</version>
+</root>
+<!-- XmlFormatterBase Document Separator -->

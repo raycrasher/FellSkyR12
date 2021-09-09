@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LogView.Editor</name>
+    </assembly>
+    <members>
+        <member name="F:Duality.Editor.Plugins.LogView.LogView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Duality.Editor.Plugins.LogView.LogView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Duality.Editor.Plugins.LogView.LogView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.LogView.Properties.LogViewRes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogCore">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogEditor">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogError">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogGame">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogMessage">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogView">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.IconLogWarning">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.LogView_ContextMenu_CopyAllItems">
+            <summary>
+              Looks up a localized string similar to Copy All.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.LogView_ContextMenu_CopyItem">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.LogView_ContextMenu_ShowSource">
+            <summary>
+              Looks up a localized string similar to Show Source.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.LogView_Errors">
+            <summary>
+              Looks up a localized string similar to Errors.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.LogView_Warnings">
+            <summary>
+              Looks up a localized string similar to Warnings.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.LogViewRes.MenuItemName_LogView">
+            <summary>
+              Looks up a localized string similar to Log View.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.LogView.Properties.LogViewResCache">
+            <summary>
+            Since directly accessing code generated from .resx files will result in a deserialization on
+            each Resource access, this class allows cached Resource access.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.LogView.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.bell">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.cross">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_core">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_editor">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_error">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_game">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_message">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.LogView.Properties.Resources.log_warning">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

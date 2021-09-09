@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ObjectInspector.Editor</name>
+    </assembly>
+    <members>
+        <member name="F:Duality.Editor.Plugins.ObjectInspector.ObjectInspector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Duality.Editor.Plugins.ObjectInspector.ObjectInspector.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Duality.Editor.Plugins.ObjectInspector.ObjectInspector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings">
+            <summary>
+            Contains all user settings for a single object inspector window.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.AutoRefresh">
+            <summary>
+            Whether the inspector will automatically refresh its values periodically while the 
+            Sandbox mode is active.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.Locked">
+            <summary>
+            Whether the inspector window is locked to its current target objects. While true, the
+            inspector will not change targets as global editor selection changes.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.TitleText">
+            <summary>
+            The window title of this inspector window.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.DebugMode">
+            <summary>
+            Whether the inspector will show internal and private values.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.SortByName">
+            <summary>
+            Whether all displayed members will be sorted by name.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorSettings.ExpandState">
+            <summary>
+            Stores the last used expand / collapse state of all UI nodes, so it can be preserved
+            between selection changes and editor restarts.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorPluginSettings">
+            <summary>
+            Contains all user settings for the object inspector plugin.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.ObjectInspectorPluginSettings.InspectorSettingsById">
+            <summary>
+            Contains user settings that are defined per inspector window.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorRes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorRes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorRes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorRes.IconObjView">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorRes.MenuItemName_ObjView">
+            <summary>
+              Looks up a localized string similar to Object Inspector.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ObjectInspector.Properties.ObjectInspectorResCache">
+            <summary>
+            Since directly accessing code generated from .resx files will result in a deserialization on
+            each Resource access, this class allows cached Resource access.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.ObjectInspector.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.arrow_refresh">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.atoz">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.bug">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.lockIcon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.ObjectInspector.Properties.Resources.page_copy">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

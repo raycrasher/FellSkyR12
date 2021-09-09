@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SceneView.Editor</name>
+    </assembly>
+    <members>
+        <member name="F:Duality.Editor.Plugins.SceneView.SceneView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Duality.Editor.Plugins.SceneView.SceneView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Duality.Editor.Plugins.SceneView.SceneView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.SceneView.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.AddScene">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.cross">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.disk">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.iconCmpUnknown">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.page_copy">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.Resources.page_paste">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.IconEyeCross">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.IconLock">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.IconSceneView">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.MenuItemDesc_CantRemoveComponent">
+            <summary>
+              Looks up a localized string similar to Can&apos;t remove {0} because it is required by the &apos;{1}&apos; Component..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.MenuItemName_RemoveComponent">
+            <summary>
+              Looks up a localized string similar to Remove.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.MenuItemName_ResetComponent">
+            <summary>
+              Looks up a localized string similar to Reset.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.MenuItemName_SceneView">
+            <summary>
+              Looks up a localized string similar to Scene View.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.OverlayLink">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.OverlayLinkBroken">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneNameLabel">
+            <summary>
+              Looks up a localized string similar to Scene.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneNameNotYetSaved">
+            <summary>
+              Looks up a localized string similar to Unsaved Scene.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_Copy">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_Delete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_Duplicate">
+            <summary>
+              Looks up a localized string similar to Duplicate.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_LockHide">
+            <summary>
+              Looks up a localized string similar to Lock / Hide.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_New">
+            <summary>
+              Looks up a localized string similar to New.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_Paste">
+            <summary>
+              Looks up a localized string similar to Paste.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_ContextItemName_Rename">
+            <summary>
+              Looks up a localized string similar to Rename.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Help_Doubleclick">
+            <summary>
+              Looks up a localized string similar to Doubleclick: {0}.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_Hidden">
+            <summary>
+              Looks up a localized string similar to Hidden.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_Hidden_Tooltip">
+            <summary>
+              Looks up a localized string similar to The object is currently locked and hidden. Click to show and unlock..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_Locked">
+            <summary>
+              Looks up a localized string similar to Locked.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_Locked_Tooltip">
+            <summary>
+              Looks up a localized string similar to The object is currently locked. Click to hide or unlock..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_LockHide">
+            <summary>
+              Looks up a localized string similar to Lock / Hide.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_Item_LockHide_Tooltip">
+            <summary>
+              Looks up a localized string similar to Click to lock or hide the object while editing..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.SceneView_PrefabLink">
+            <summary>
+              Looks up a localized string similar to Linked to: {0}.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.Properties.SceneViewRes.UndoRedo_DeleteObjects">
+            <summary>
+              Looks up a localized string similar to Delete {0} Objects.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.SceneView.Properties.SceneViewResCache">
+            <summary>
+            Since directly accessing code generated from .resx files will result in a deserialization on
+            each Resource access, this class allows cached Resource access.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.SceneView.SceneViewSettings.ShowComponents">
+            <summary>
+            Controls whether components are shown as individual nodes in the scene tree
+            </summary>
+        </member>
+    </members>
+</doc>

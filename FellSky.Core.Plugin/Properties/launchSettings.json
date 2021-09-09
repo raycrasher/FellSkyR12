@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FellSky.Core.Plugin": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Projects\\FellSky\\Game\\DualityGame.exe",
+      "workingDirectory": "C:\\Projects\\FellSky\\Game"
+    }
+  }
+}

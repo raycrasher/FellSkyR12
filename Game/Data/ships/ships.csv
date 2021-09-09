@@ -1,0 +1,2 @@
+Id,Name,Class,Role,Prefab,HullMods,ShipSystem,ForwardSpeed,ForwardTwr,ManeuverSpeed,ManeuverTwr,TurnSpeed,TurnTwr,Mass,LinearDamping,AngularDamping,Hull,Armor,HeatCap,HeatRejection,HeatGen,PowerGen,PowerCap,PowerOverloadTime,Crew,Cargo
+scimitar,Scimitar,Frigate,Interception,ships/Scimitar.Prefab.res,,,5,0.5,2,0.2,90,0.6,200,0.9,0.9,3000,800,500,50,100,50,1000,300,20,100

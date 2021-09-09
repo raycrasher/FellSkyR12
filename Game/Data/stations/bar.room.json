@@ -1,0 +1,9 @@
+{
+	"id": "bar",
+	"actions": [
+		{ 
+			"name":  "Free drinks for the crew!",
+			"effects": [ "morale_up_bar" ]
+		}
+	]
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelpAdvisor.Editor</name>
+    </assembly>
+    <members>
+        <member name="F:Duality.Editor.Plugins.HelpAdvisor.HelpAdvisor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Duality.Editor.Plugins.HelpAdvisor.HelpAdvisor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Duality.Editor.Plugins.HelpAdvisor.HelpAdvisor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.HelpInfo_Advisor_Desc">
+            <summary>
+              Looks up a localized string similar to The Advisor will support you with context-based information about Duality. Press F1 at any time to access more information about the current topic..
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.HelpInfo_Advisor_Topic">
+            <summary>
+              Looks up a localized string similar to Advisor Window.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.IconHelp">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorRes.MenuItemName_Advisor">
+            <summary>
+              Looks up a localized string similar to Advisor.
+            </summary>
+        </member>
+        <member name="T:Duality.Editor.Plugins.HelpAdvisor.Properties.HelpAdvisorResCache">
+            <summary>
+            Since directly accessing code generated from .resx files will result in a deserialization on
+            each Resource access, this class allows cached Resource access.
+            </summary>
+        </member>
+    </members>
+</doc>

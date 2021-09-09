@@ -1,0 +1,35 @@
+{
+	"id": "magellan",
+	"name": "Magellan Gateway Base",
+	"description": "Deployed on Year 3 during the initial phase of the Expedition, the Magellan Gateway Base has the distinction of the first station to be constructed inside the Yggdrasil Anomaly. Almost all excursions into the Ruins start here, fewer still return. The station houses the headquarters of several companies and entities which begrudgingly share access to and control of Yggdrasil. As such, Magellan is the defacto capital and center of human power in Yggdrasil, and it is fiercely loved and defended by its denizens.",
+	"rooms": [
+		{
+			"id": "bar",
+			"name": "Santa Maria",
+			"enterButtonText": "Visit the <span class='orange'>Santa Maria</span>",
+			"type": "bar",
+			"description": "The Santa Maria is Magellan Base's first and oldest bar. Although the nightlife of Magellan has vastly improved since its founding, patrons old and new still consider ol' Maria as its rambunctious, unruly soul. Within its halls, scandals are brewed and stories are told, and fists fly in the same air as gossip."
+		},
+		{
+			"id": "trade",
+			"name": "Traders Bazaar",
+			"enterButtonText": "Stop by the <span class='cyan'>Traders Bazaar</span>",
+			"type": "trade",
+			"description": "The Traders Bazaar is a fixture of almost every station and outpost in Yggdrasil, but this one is bigger than most. Throngs of trade ships fly in from the core worlds carrying supplies, equipment and wide-eyed youngsters, and a week later return with relics, artifacts, and returning adventurers - haunted by the curse of Yggdrasil, or in a vacuum sealed bodybag."
+		},
+		{
+			"id": "equipment",
+			"name": "Equipment Shop",
+			"enterButtonText": "Go to the equipment shops",
+			"type": "equipment",
+			"description": "Adventurers would be remiss to ignore the equipment shops and foundries of Magellan. While some mostly deal in imported weaponry and armor from the core worlds, locally sourced equipment is very much in demand, for second hand equipment tends to be proven, and the demon-guns of Yggdrasil tends to be quite powerful."
+		},
+		{
+			"id": "ship",
+			"name": "Ship Dealer",
+			"enterButtonText": "Visit the ship dealer",
+			"type": "ship",
+			"description": "Magellan hosts one of the best shipyards in Yggdrasil. Several manufacturers and dealers ply in ships here. Some are shiny new - resplendent, with nary a touch of blaster fire on the hull, others with the reek of combat and death washed off the bulkheads."
+		}
+	]
+}
