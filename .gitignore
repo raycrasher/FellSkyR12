@@ -21,3 +21,4 @@ EditorUserData.xml
 *.user
 *.vspx
 *.psess
+packages/*
