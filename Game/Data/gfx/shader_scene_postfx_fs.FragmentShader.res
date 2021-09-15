@@ -9,13 +9,15 @@
   <source dataType="String">#pragma duality description "The main texture of the material."
 uniform sampler2D mainTex;
 uniform vec2 resolution;
+uniform float bloomLowerLimit;
+uniform float bloomMult;
 
 in vec4 programColor;
 in vec2 programTexCoord;
 
 out vec4 fragColor;
 
-const vec3 lower = vec3(0.0f); 
+
 
 const int samples = 30,
           LOD = 1,         // gaussian done on MIPmap at scale LOD
@@ -45,7 +47,7 @@ void main()
 	
 	vec4 blur = blur(mainTex, programTexCoord, 1f / resolution);
 	
-	vec3 bloom = clamp( smoothstep(lower, vec3(1), blur.rgb) * 4f, vec3(0f), vec3(1f));
+	vec3 bloom = clamp( smoothstep(vec3(bloomLowerLimit), vec3(1), blur.rgb) * bloomMult, vec3(0f), vec3(1f));
 	
 	result.rgb =  bloom * blur.rgb + result.rgb;
 	fragColor = result;

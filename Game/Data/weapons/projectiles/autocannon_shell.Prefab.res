@@ -21,8 +21,8 @@
                 <ignoreParent dataType="Bool">false</ignoreParent>
                 <pos dataType="Struct" type="Duality.Vector3" />
                 <posAbs dataType="Struct" type="Duality.Vector3">
-                  <X dataType="Float">33.17512</X>
-                  <Y dataType="Float">62.9476242</Y>
+                  <X dataType="Float">472.175232</X>
+                  <Y dataType="Float">-393.052368</Y>
                   <Z dataType="Float">0</Z>
                 </posAbs>
                 <scale dataType="Float">1</scale>
@@ -94,13 +94,13 @@
           <gameobj dataType="ObjectRef">3272232284</gameobj>
           <ignoreParent dataType="Bool">false</ignoreParent>
           <pos dataType="Struct" type="Duality.Vector3">
-            <X dataType="Float">33.17512</X>
-            <Y dataType="Float">62.9476242</Y>
+            <X dataType="Float">472.175232</X>
+            <Y dataType="Float">-393.052368</Y>
             <Z dataType="Float">0</Z>
           </pos>
           <posAbs dataType="Struct" type="Duality.Vector3">
-            <X dataType="Float">33.17512</X>
-            <Y dataType="Float">62.9476242</Y>
+            <X dataType="Float">472.175232</X>
+            <Y dataType="Float">-393.052368</Y>
             <Z dataType="Float">0</Z>
           </posAbs>
           <scale dataType="Float">1</scale>
@@ -151,10 +151,16 @@
             </_items>
             <_size dataType="Int">1</_size>
           </_childTransforms>
+          <_hit dataType="Bool">false</_hit>
           <_x003C_FiredFrom_x003E_k__BackingField />
           <_x003C_InitialVelocity_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
           <_x003C_MaxAge_x003E_k__BackingField dataType="Float">0</_x003C_MaxAge_x003E_k__BackingField>
           <_x003C_Owner_x003E_k__BackingField />
+          <_x003C_SpawnOnHit_x003E_k__BackingField dataType="Array" type="Duality.ContentRef`1[[Duality.Resources.Prefab]][]" id="3112573450">
+            <item dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+              <contentPath dataType="String">Data\effects\explosion_bullethit.Prefab.res</contentPath>
+            </item>
+          </_x003C_SpawnOnHit_x003E_k__BackingField>
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">3272232284</gameobj>
         </item>

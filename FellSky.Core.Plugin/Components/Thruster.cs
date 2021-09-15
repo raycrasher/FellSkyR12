@@ -30,7 +30,6 @@ namespace FellSky.Components
                 return;
 
             var xform = GameObj.Transform;
-            var renderer = GameObj.GetComponent<SpriteRenderer>();
             var shipXform = ship.GameObj.Transform;
             var thrusterVector = Vector2.FromAngleLength(xform.Angle + MathF.PiOver2, 1);
             var desiredVel = ship.DesiredVelocity.Normalized;
@@ -47,7 +46,12 @@ namespace FellSky.Components
                     if (ship.IsInInitialBoost)
                     {
                         var eff = ship.GameObj.GetComponent<ParticleEffect>();
-                        eff.AddParticles(eff.Emitters[0], 20, shipXform.GetWorldVector(xform.LocalPos + new Vector3(Vector2.FromAngleLength(xform.LocalAngle + MathF.PiOver2 + MathF.Pi, 20), 0)), xform.LocalAngle, new Vector3(ship.GameObj.GetComponent<RigidBody>().LinearVelocity, 0));
+                        eff.AddParticles(
+                            eff.Emitters[0], 
+                            30, 
+                            shipXform.GetWorldVector(xform.LocalPos + new Vector3(Vector2.FromAngleLength(xform.LocalAngle + MathF.PiOver2 + MathF.Pi, 20), 0)), 
+                            xform.LocalAngle, 
+                            new Vector3(ship.GameObj.GetComponent<RigidBody>().LinearVelocity, 0));
                     }
                 }
                 if (scale < curMaxScale && isThrusting)
@@ -64,7 +68,7 @@ namespace FellSky.Components
             {
                 scale = 1f;
             }
-            xform.Scale = MathF.Clamp(scale, minScale, scale) + MathF.Sin((float)Time.GameTimer.TotalSeconds * 3) * 0.01f;
+            xform.Scale = MathF.Clamp(scale, minScale, scale) + MathF.Sin((float)Time.GameTimer.TotalSeconds * 2) * 0.01f;
         }
     }
 }

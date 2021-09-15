@@ -55,7 +55,7 @@ namespace FellSky.Components
     }
 
     [EditorHintCategory("Game")]
-    public class Weapon : Component, ICmpUpdatable, ICmpInitializable
+    public class Weapon : Component, ICmpUpdatable, ICmpInitializable, IFriendOrFoe
     {
         class BarrelData
         {
@@ -76,11 +76,13 @@ namespace FellSky.Components
         public GameObject Projectile { get; set; }
         public ContentRef<Prefab> ProjectilePrefab { get; set; }
 
+        public GameObject Owner { get; set; }
+
         private ITargeting _targeting;
         private Hardpoint _hardpoint;
         private BarrelData[] _barrels;
         private int _barrelIndex;
-
+        
         public void OnUpdate()
         {
             if (Data == null) return;
@@ -269,13 +271,14 @@ namespace FellSky.Components
             {
                 if (proj is Bullet bullet)
                 {
-                    var newBullet = bullet.GameObj.Clone();
+                    var newBullet = ProjectilePrefab.Res.Instantiate();
                     bullet = newBullet.GetComponent<Bullet>();
                     var bulletTransform = newBullet.Transform;
                     bulletTransform.Pos = _barrels[_barrelIndex].Transform.Pos;
                     bulletTransform.Angle = _barrels[_barrelIndex].Transform.Angle;
                     bullet.InitialVelocity = Vector2.FromAngleLength(bulletTransform.Angle + MathF.PiOver2, Data.BulletSpeed);
                     bullet.MaxAge = Data.BulletLifetime;
+                    bullet.Owner = Owner;
                     Scene.AddObject(newBullet);
                     _barrels[_barrelIndex].Anim = Data.CycleTime;
                     _barrelIndex++;

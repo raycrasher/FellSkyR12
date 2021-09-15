@@ -8,8 +8,8 @@
 	background: #113311f9;
 	border-width: 0px 0px 0px 3px;
 	border-color: #339933DD;
+	width: 50%;
 	margin-left: 50%;
-	padding: 10px 20px;
 	font-size: 16px;
 	height: 100%;
 }
@@ -32,20 +32,41 @@
 	margin-bottom: 10px;
 }
 
+#customstorypanel {
+	display: none;
+}
+
+#defaultstorypanel {
+	display: block;
+}
+
+body.custom #customstorypanel {
+	display: block;
+}
+
+body.custom #defaultstorypanel {
+	display: none;
+}
+
+#rootContainer {
+	display:block;
+	margin: 20px;
+}
+
 </style>
 </head>
-<body>
-<div class="window">
-<h1 id="storyName">Unknown Station</h1>
-<p id="storyDescription">Insert description here</p>
+<body class="window">
+	<div id="rootContainer">
+		<div id="defaultstorypanel">
+			<h1 id="storyName">Unknown Station</h1>
+			<p id="storyDescription">Insert description here</p>
 
-<ul id="actions" class="action-list">
-<li onclick="dock.bar">Visit the local bar</li>
-<li onclick="dock.shipdealer">Visit the ship dealer</li>
-<li onclick="dock.equip">Visit the equipment shops</li>
-<li onclick="dock.trade">Check the traders' bazaar</li>
-<li onclick="undock">[[ EXIT ]] Go back to your ship</li>
-</ul>
-</div>
+			<ul id="actions" class="action-list">
+			<li onclick="undock">[[ EXIT ]] Go back to your ship</li>
+			</ul>
+		</div>
+		<div id="customstorypanel">
+		</div>
+	</div>
 </body>
 </html>

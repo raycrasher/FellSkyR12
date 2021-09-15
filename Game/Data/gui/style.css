@@ -16,6 +16,10 @@ h1 {
 	font-size: 30px;
 }
 
+.container {
+	width: 100%;
+}
+
 .window {
 	margin: 20px;
 	border: solid;

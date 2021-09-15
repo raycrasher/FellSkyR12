@@ -137,6 +137,7 @@
         <input dataType="Struct" type="Duality.Drawing.BatchInfo" id="2520991116">
           <parameters dataType="Struct" type="Duality.Drawing.ShaderParameterCollection" id="439787428" custom="true">
             <body>
+              <bloomMult dataType="Array" type="System.Single[]" id="4054148292">5</bloomMult>
               <mainTex dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Texture]]">
                 <contentPath dataType="String">Data\gfx\mainRenderTargetTexture.Texture.res</contentPath>
               </mainTex>

@@ -2,28 +2,55 @@
 <head>
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <style>
-h1 {
-	padding: 5px;
-}
 .window {
-	margin: 20px;
-	bottom: -20px;
-	border: solid;
-	border-color: blue;
-	border-width: 1px;
-	background: #33333333;
+	display: block;
+	margin: 0px;
+	background: #113311f9;
+	border-width: 0px 3px 0px 0px;
+	border-color: #339933DD;
+	width: 50%;
+	font-size: 16px;
 	height: 100%;
-	display:block;
-	padding: 5px;
+	padding:0px;
 }
+#items {
+	display:block;
+	color:white;
+	border-color: #339933DD;
+	background: #002200f9;
+	border-width: 2px;
+	margin-right: 40px;
+	height: 80%;
+	overflow-y:auto;
+}
+#items li{
+	display: inline-block;
+	margin: -1px;
+	border-color: #33993388;
+	border-width: 1px;
+	padding: 2px;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	drag: clone;
+}
+#items li img{
+	display: block;
+}
+
+#rootContainer {
+	display:block;
+	margin: 20px;
+}
+
 </style>
 </head>
-<body>
-<div class="window">
-	<h1>Inventory</h1>
-	<div>
-
+<body class="window">
+	<div id="rootContainer" class="container">
+		<h1>Inventory</h1>
+		<ul id="items">
+		</ul>
+	
 	</div>
-</div>
 </body>
 </html>

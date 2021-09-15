@@ -42,6 +42,10 @@ namespace FellSky.Gui
                     _renderInterface.Technique = value;
             }
         }
+        [DontSerialize]
+        bool isFirstDraw;
+
+        public List<ContentRef<Texture>> PreloadedTextures { get; set; } = new List<ContentRef<Texture>>();
 
         public static VisibilityFlag VisibilityGroup { get => visibilityGroup; set => visibilityGroup = value; }
 
@@ -50,6 +54,14 @@ namespace FellSky.Gui
 
         public void Draw(IDrawDevice device)
         {
+            if (!isFirstDraw)
+            {
+                isFirstDraw = true;
+                foreach(var tex in PreloadedTextures)
+                {
+                    tex.EnsureLoaded();
+                }
+            }
             if (_context != null)
             {
                 _renderInterface.Device = device;
@@ -59,8 +71,9 @@ namespace FellSky.Gui
                     _context.Dimensions.Y != (int)device.TargetSize.Y
                     )
                     _context.Dimensions = new Vector2i((int)device.TargetSize.X, (int)device.TargetSize.Y);
-
+                _renderInterface.Begin();
                 _context.Render();
+                _renderInterface.End();
             }
         }
 

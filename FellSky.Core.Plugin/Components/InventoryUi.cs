@@ -1,5 +1,7 @@
 ﻿using Duality;
 using Duality.Editor;
+using Duality.Resources;
+using FellSky.Data;
 using FellSky.Gui;
 using System;
 using System.Collections.Generic;
@@ -19,6 +21,10 @@ namespace FellSky.Components
 
         [DontSerialize]
         private bool needsReload;
+        [DontSerialize]
+        private bool isFirstRun;
+        [DontSerialize]
+        private IList<ItemStack> _currentItemList;
 
         public void OnActivate()
         {
@@ -39,6 +45,11 @@ namespace FellSky.Components
 
         public void OnUpdate()
         {
+            if (!isFirstRun)
+            {
+                isFirstRun = true;
+            }
+
             if (DualityApp.Keyboard.KeyHit(Duality.Input.Key.F5))
                 NeedsReload = true;
 
@@ -47,6 +58,7 @@ namespace FellSky.Components
             if (!isVisible && _document.IsVisible)
             {
                 _document.Hide();
+                _currentItemList = null;
             }
             else if (isVisible && !_document.IsVisible)
             {
@@ -60,7 +72,33 @@ namespace FellSky.Components
                 }
                 _document = GuiCore.Context.LoadDocument(DocumentName);
                 if (IsVisible) _document.Show();
+                if(IsVisible && _currentItemList != null)
+                {
+                    LoadFrom(_currentItemList);
+                }
                 NeedsReload = false;
+            }
+        }
+
+        public void LoadFrom(IList<ItemStack> items)
+        {
+            var listElem = _document.GetElementById("items");
+            listElem.InnerRml = "";
+            _currentItemList = items;
+            foreach(var item in items)
+            {
+                var itemType = item.Item;
+                var r = itemType.IconTexCoords;
+                var itemElem = new LibRocketNet.Element("li");
+
+                //itemElem.InnerRml = $"<img src='{itemType.IconTexture}' width='50' height='50' coords='{r.X},{r.Y},{r.RightX},{r.BottomY}'/>";
+                var img = new LibRocketNet.Element("img");
+                img.SetAttribute("src", itemType.IconTexture);
+                img.SetAttribute("width", 50);
+                img.SetAttribute("height", 50);
+                img.SetAttribute("coords", $"{r.X},{r.Y},{r.RightX},{r.BottomY}");
+                itemElem.AppendChild(img);
+                listElem.AppendChild(itemElem);
             }
         }
     }

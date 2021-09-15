@@ -223,6 +223,7 @@ namespace FellSky.Resources
                     geom.Vertices[index].Color = spr.ColorTint;
                     geom.Vertices[index].Rotation = rot;
                     geom.Vertices[index].Scale = scale;
+                    //geom.Vertices[index].Param = scale;
 
                     index++;
 

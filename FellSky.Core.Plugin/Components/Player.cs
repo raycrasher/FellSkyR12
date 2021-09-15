@@ -104,6 +104,21 @@ namespace FellSky.Components
                 {
                     var dock = ship.CanDockWith.First();
                     dock.StartDock(ship);
+                    GC.Collect();
+                }
+            }
+
+            if (DualityApp.Keyboard.KeyHit(Duality.Input.Key.I))
+            {
+                var inventoryUi = Scene.FindComponent<InventoryUi>();
+                if (inventoryUi != null)
+                {
+                    inventoryUi.IsVisible = !inventoryUi.IsVisible;
+                    if (inventoryUi.IsVisible)
+                    {
+                        inventoryUi.LoadFrom(ship.Items);
+                        GC.Collect();
+                    }
                 }
             }
 

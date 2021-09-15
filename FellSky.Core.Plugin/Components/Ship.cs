@@ -2,6 +2,7 @@
 using Duality.Components.Physics;
 using Duality.Components.Renderers;
 using Duality.Editor;
+using FellSky.AI;
 using FellSky.Data;
 using System;
 using System.Collections.Generic;
@@ -34,10 +35,19 @@ namespace FellSky.Components
         }
     }
 
+    //public struct TurnToVector : IShipTurning
+    //{
+    //    public Vector2 Vector { get; set; }
+    //
+    //    public TurnToVector(Vector2 vec)
+    //    {
+    //        Vector = vec;
+    //    }
+    //}
 
 
     [EditorHintCategory("Game")]
-    public class Ship : Component, ICmpUpdatable, ICmpInitializable, ICmpCollisionListener, ITargeting, IFriendOrFoe
+    public class Ship : Component, ICmpUpdatable, ICmpInitializable, ICmpCollisionListener, ITargeting, IFriendOrFoe, ISteerable
     {
         public Vector2 DesiredVelocity { get; set; }
         public IShipTurning DesiredTurn { get; set; }
@@ -51,7 +61,7 @@ namespace FellSky.Components
         public float DesiredTurnDirection { get; private set; }
         public Vector2 PrimaryAimPoint { get; set; }
         public GameObject Owner { get => this.GameObj; }
-
+        public float MaxSteeringAcceleration => Data?.ForwardSpeed ?? 0f;
 
         private Light _engineLight;
         private float _angularVelocity;
@@ -63,10 +73,13 @@ namespace FellSky.Components
         [DontSerialize]
         private HashSet<Dock> canDockWith = new HashSet<Dock>();
         private bool immobilized;
+        private List<ItemStack> items = new List<ItemStack>();
+
+        public List<ItemStack> Items { get => items; set => items = value; }
 
         public void OnActivate()
         {
-            if (ShipData.TryGetShip(ShipDataId, out var data))
+            if (ShipDataId != null && ShipData.TryGetShip(ShipDataId, out var data))
             {
                 Data = data;
                 var body = GameObj.GetComponent<RigidBody>();
@@ -87,12 +100,15 @@ namespace FellSky.Components
             SetHardpointVisibility(false);
         }
 
+
+
         public void RefreshEquipmentCache()
         {
             _weapons = GameObj.GetComponentsDeep<Weapon>();
             foreach (var wpn in _weapons)
             {
                 wpn.State = WeaponState.Idle;
+                wpn.Owner = this.GameObj;
             }
             _thrusters = GameObj.GetComponentsDeep<Thruster>();
             _engineLight = GameObj.GetChildByName("engineLight")?.GetComponent<Light>();
@@ -147,6 +163,12 @@ namespace FellSky.Components
 
         public HashSet<Dock> CanDockWith { get => canDockWith; set => canDockWith = value; }
         public bool IsImmobilized { get => immobilized; set => immobilized = value; }
+
+        public Vector2 CurrentPosition => GameObj.Transform.Pos.Xy;
+        public Vector2 LinearVelocity => GameObj.GetComponent<RigidBody>().LinearVelocity;
+        public Vector2 CurrentFacing => GameObj.Transform.GetWorldVector(new Vector2(1, 0));
+
+        public float Radius => GameObj.GetComponent<RigidBody>().BoundRadius;
 
         private void UpdateEffects()
         {
